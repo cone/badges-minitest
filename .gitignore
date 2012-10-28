@@ -1,0 +1,12 @@
+.bundle
+.DS_Store
+.powrc
+.sass-cache/
+.vagrant
+.jhw-cache/
+db/*.sqlite3
+log/*.log
+public/assets
+tmp
+coverage
+tags

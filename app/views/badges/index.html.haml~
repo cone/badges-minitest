@@ -1,0 +1,14 @@
+#container
+.badge
+  badge1
+.badge
+  badge2
+.badge
+  badge3
+.badge
+  badge3
+.badge
+  badge4
+.badge
+  badge5
+= render 'shared/isotope'
