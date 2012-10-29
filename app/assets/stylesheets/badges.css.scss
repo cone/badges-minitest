@@ -1,20 +1,80 @@
+@import url(http://fonts.googleapis.com/css?family=Molle:400italic);
+
 $sky_blue: #7accc8;
 $mex_pink: #faad81;
 $orange:   #fbae5c;
 $dark_grey:#423d3a;
 $light_grey:#ebebeb;
+$emerald:  #76afb6;
+$grey_blue:#355d5c;
+$pink_brown:#955d3c;
+$orange_brown:#88623b;
 
-.badge{
-  width:100px;
-  height:100px;
-  display:inline;
+
+.container{
+  font-family:'Molle', cursive;
+  margin-left:0;
+  margin-right:0;
+  width:100%;
+}
+
+.crowdBadge{
+  width:108px;
+  height:114px;
+  margin:20px;
+}
+.bean{
+  background:url('badges.gif') 0 0;
+}
+.jedi_bear{
+  background:url('badges.gif') -156px 0;
+}
+.toilet_bear{
+  background:url('badges.gif') -312px 0;
+}
+.zombie_bear{
+  background:url('badges.gif') -468px 0;
+}
+
+@media (min-width: 640px){
+  #mockup_banner{
+    height:100px;
+    #nominate_tag{
+      margin-top:5px;
+    }
+  }
+  #mockup_menu{
+    height:100px;
+    #profile_info, #crowd_info, #badges_info{
+      height:100%;
+      width:33.2%;
+      display:block;
+      float:left;
+    }
+  }
+}
+
+@media (max-width: 639px){
+  #mockup_banner{
+    height:210px;
+    #nominate_tag{
+      margin-top:15px;
+    }
+  }
+  #mockup_menu{
+    height:300px;
+    #profile_info, #crowd_info, #badges_info{
+      height:100px;
+      width:100%;
+    }
+  }
 }
 
 #mockup_header{
   #mockup_title{
     height:50px;
     background-color:$dark_grey;
-    padding-top:5px;
+    padding-top:7px;
     #title{
       background:url('title.jpg') no-repeat center;
       text-align:center;
@@ -25,48 +85,105 @@ $light_grey:#ebebeb;
     }
   }
   #mockup_banner{
-    height:120px;
     border-bottom:1px solid;
-    background-color:$sky_blue;
-    #user_image{
-      display:inline;
-      width:200px;
-    }    
-    #nominate_tag{
+    padding-top:7px;
+    #mockup_banner_container{
+      height:90px;
+      width:100%;
+    }
+    #main_image{
+      position:absolute;
+      z-index:9999;
+      top: 40px;
+      width:139px;
+      height:139px;
+    }
+    #main_caption{
+      word-wrap:break-word;
+      width:150px;
+      margin-left:150px;
+      text-align:center;
       display:block;
-      width:300px;
+      float:left;
+    }
+    #nominate_tag{
+      background:url('nominate_flag.gif') no-repeat right top;
+      width:226px;
+      height:80px;
+      display:block;
       float:right;
     }
   }
 }
 
 #badges_container{
+  min-height:500px;
+  width:100%;
   margin:0;
+  padding-top:20px;
   background-color:$light_grey;
 }
 
 #mockup_footer{
   #mockup_menu{
-    height:100px;
     width:100%;
     border:1px solid;
-    #profile_info, #crowd_info, #badges_info{
-      width:33.2%;
-      height:100%;
-      display:block;
-      float: left;
-    }
     #profile_info, #crowd_info{
       border-right: 1px solid;
     }
     #profile_info{
       background-color:$sky_blue;
+      border-color:$grey_blue;
+      color:$grey_blue;
     }
     #crowd_info{
       background-color:$mex_pink;
+      border-color:$pink_brown;
+      color:$pink_brown;
     }
     #badges_info{
       background-color:$orange;
+      border-color:$orange-brown;
+      color:$orange-brown;
     }
   }
+}
+
+.profile_banner{
+  background-color:$sky-blue;
+  color:$grey_blue;
+  #mockup_banner_container{
+    border-top:$emerald 1px dashed;
+    border-bottom:$emerald 1px dashed;
+    #main_image{
+      background:url('photo.gif') no-repeat left top;
+    }
+  }
+}
+
+.badges_banner{
+  background-color:$orange;
+  color:$orange_brown;
+  #mockup_banner_container{
+    border-top:$orange_brown 1px dashed;
+    border-bottom:$orange_brown 1px dashed;
+    #main_image{
+      background:url('star_bear.gif') no-repeat left top;
+    }
+  }
+}
+
+.rounded_corners_dashed{
+  margin:10px;
+  padding:5px 10px 5px 10px;
+  height:60px;
+  border:1px dashed;
+  -moz-border-radius: 15px;
+  border-radius:15px;
+  text-align:center;
+}
+
+.border_dashed{
+  margin:3px;
+  border:1px dashed; 
 }
