@@ -36,6 +36,12 @@ $orange_brown:#88623b;
   background:url('badges.gif') -468px 0;
 }
 
+.AddedCrowdBadge{
+  background:url('workaholic.jpg') no-repeat left top;
+  width:214px;
+  height:189px;
+}
+
 @media (min-width: 640px){
   #mockup_banner{
     height:100px;
@@ -125,6 +131,9 @@ $orange_brown:#88623b;
 }
 
 #mockup_footer{
+  a{
+    text-decoration: none;
+  }
   #mockup_menu{
     width:100%;
     border:1px solid;
@@ -134,7 +143,9 @@ $orange_brown:#88623b;
     #profile_info{
       background-color:$sky_blue;
       border-color:$grey_blue;
-      color:$grey_blue;
+      a{
+        color:$grey_blue;
+      }
     }
     #crowd_info{
       background-color:$mex_pink;
@@ -145,6 +156,7 @@ $orange_brown:#88623b;
       background-color:$orange;
       border-color:$orange-brown;
       color:$orange-brown;
+      cursor:pointer;
     }
   }
 }
